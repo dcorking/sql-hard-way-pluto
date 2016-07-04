@@ -279,3 +279,10 @@ FROM pet, person_pet, person
 WHERE
     pet.id = person_pet.pet_id AND
     person.id = person_pet.person_id;
+
+SELECT * FROM person;
+
+    ALTER TABLE person ADD COLUMN height FLOAT;
+    ALTER TABLE person ADD COLUMN weight FLOAT;
+
+SELECT * FROM person;
